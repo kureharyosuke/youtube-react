@@ -6,13 +6,12 @@ import MainContainer from './MainContainer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header/>
       <div className="app__page">
       <Sidebar/>
       <MainContainer/>
       </div>
-    <h1> Hello Youtebe💻</h1>
     </div>
   );
 }
