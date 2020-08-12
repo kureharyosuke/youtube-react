@@ -5,7 +5,18 @@ function VideoCard({ thumbnailUrl, channelImageUrl, postedDate, title, channelNa
     // BEM naming convention for CSS
     return (
         <div className='videoCard'>
-            <h1>Video Card</h1>
+            <img className="videoCard__thumbnail" src={thumbnailUrl} alt=""/>
+            <div className="videoCard__info">
+                <div className="videoCard__channelImageContainer">
+                    <img src={channelImageUrl} alt=""/>
+                </div>
+                <div className="videoCard__infoText">
+                    <p className="videoCard__title">{title}</p>
+                    <p className="videoCard__channelName">{channelName}</p>
+                    <p className="videoCard__noOfViews">{noOfViews}</p>
+                    <p className="videoCard__postedDate">{postedDate}</p>
+                </div>
+            </div>
         </div>
     )
 }
